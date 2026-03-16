@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Guerre d'Avions - Vertical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <!-- Écran d'accueil -->
+        <div id="home-screen" class="screen">
+            <h1>✈️ GUERRE D'AVIONS ✈️</h1>
+            <p>🎯 Appuie sur l'écran pour tirer !</p>
+            <p>✅ Attrape les <span style="color: #0f0;">bonus verts</span></p>
+            <p>❌ Détruis les <span style="color: #f00;">ennemis</span></p>
+            <p>👆 Glisse pour déplacer ton avion</p>
+            <button id="start-game">COMMENCER</button>
+            <div class="dev-credit">STEVE ONLY DOPE</div>
+        </div>
+
+        <!-- Écran de jeu -->
+        <div id="game-screen" class="screen hidden">
+            <div class="header">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="lives">Vies: <span id="lives">3</span></div>
+                <div class="highscore">🏆 <span id="highscore">0</span></div>
+            </div>
+            <canvas id="gameCanvas"></canvas>
+            <div class="controls">
+                <button id="restart">Rejouer</button>
+                <button id="home">Accueil</button>
+            </div>
+            <div class="footer">STEVE ONLY DOPE</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
