@@ -407,3 +407,4 @@ homeBtn.addEventListener('click', goHome);
 
 resizeCanvas();
 gameLoop();
+ 
